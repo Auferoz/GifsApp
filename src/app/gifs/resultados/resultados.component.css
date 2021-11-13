@@ -1,0 +1,10 @@
+.card-body > .card-title {
+    max-width: 390px;
+}
+
+.card-img-top {
+    min-width: 100%;
+    min-height: 370px;
+    max-height: 370px;
+    object-fit: cover;
+}

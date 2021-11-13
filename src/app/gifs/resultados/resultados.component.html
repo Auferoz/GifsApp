@@ -5,13 +5,14 @@
 </ul> -->
 
 <div class="row">
-    <div *ngFor="let gif of resultados" class="col-md-4 col-sm-6 col-xs-12 p-2">
+    <div *ngFor="let gif of resultados" class="col-md-4 col-sm-6 col-xs-12 animate__animated animate__fadeIn p-2">
         <div class="card">
             <img [src]="gif.images.downsized_medium.url" [alt]="gif.title" class="card-img-top">
             <div class="card-body">
-                <p class="card-title text-left text-nowrap bd-highlight m-0">
+                <h5 class="card-title text-left overflow-hidden text-nowrap bd-highlight m-0">
                     {{ gif.title }}
-                </p>
+                </h5>
+                <p class="card-title text-left overflow-hidden text-nowrap pt-2 m-0">Embed: <a [href]="gif.embed_url" target="_blank">{{ gif.embed_url }}</a></p>
             </div>
         </div>
     </div>

@@ -1,8 +1,10 @@
-<h5>Buscar:</h5>
-<input 
-    type="text" 
-    class="form-control" 
-    placeholder="Buscar..."
-    (keyup.enter)="buscar()"
-    #txtBuscar
->
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+        <input class="form-control me-2" 
+        type="text" 
+        placeholder="Search"
+        (keyup.enter)="buscar()"
+        #txtBuscar
+        >
+      </div>
+  </nav>
